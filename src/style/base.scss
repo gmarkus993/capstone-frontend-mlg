@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    // background-color: #282828;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+
+
+html{
+    // background-color: #282828;
+    margin-top: 0px;
+    overflow: hidden;
+    
+}
+// .app-wrapper {
+//     padding: 0em;
+//     margin: none;
+//     display: grid;
+//     justify-items: center;
+//     overflow: hidden;
+// }
+
+.app {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    font-size: 4.2rem;
+}
+
+
+.homepage {
+    display: flex;
+    
+    justify-content: flex-start;
+    width: 100vw;
+
+}
+
+.icon{
+    color: lightblue;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container{
+    height: 100vh;
+
+}
