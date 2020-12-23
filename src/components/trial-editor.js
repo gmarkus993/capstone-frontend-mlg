@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
 import { Controlled as CodeMirror } from 'react-codemirror2';
 import pushid from 'pushid';
 
@@ -8,12 +10,15 @@ import 'codemirror/mode/javascript/javascript';
 
 
 class TrialEditor extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       id: '',
-      js: ''
+      js: '',
+      codeSubmission: this.props.codeSubmission
     };
+    this.forceButton = this.forceButton.bind(this);
+
   }
 
   componentDidUpdate() {
@@ -27,9 +32,13 @@ class TrialEditor extends Component {
   }
 
   runCode = () => {
-    const { js } = this.state;
-    console.log(js)
+    const  js  = this.state;
+    // console.log(js)
   }
+
+  forceButton(event){
+    console.log("hello")
+  } 
 
     
 
@@ -58,7 +67,9 @@ class TrialEditor extends Component {
               }}
             />
           </div>
+          <Button onClick={this.forceButton}>TEST THE FORCE</Button>
         </section>
+
         
       </div>
     );

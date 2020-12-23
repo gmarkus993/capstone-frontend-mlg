@@ -8,12 +8,13 @@ import { faOldRepublic } from "@fortawesome/free-brands-svg-icons";
 import Button from 'react-bootstrap/Button'
 import { Col, Container, Row } from 'react-bootstrap';
 
+import Navbar from './navbar'
 import HomePage from './pages/home'
 import About from './pages/about'
 import Training from './pages/training'
-import Navbar from './navbar'
 import SignUp from './pages/signup'
 import Login from './pages/login'
+import MochaAttempt from './pages/mocha-attempt'
 import TrialOne from './trials/trial-one';
 import TrialTwo from './trials/trial-two';
 import TrialThree from './trials/trial-three';
@@ -41,6 +42,8 @@ export default class App extends Component {
               <Route path="/trial-three" component={TrialThree}/>
               <Route path="/signup" component={SignUp} />
               <Route path="/login" component={Login} />
+              <Route path="/mocha-attempt" component={MochaAttempt}></Route>
+              <Route path="/trial-editor" component={TrialEditor}></Route>
             </Switch>
             
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Controlled as CodeMirror } from 'react-codemirror2'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row, Button } from 'react-bootstrap';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';
 import 'codemirror/mode/javascript/javascript';
@@ -12,8 +12,8 @@ import TrialEditor from '../trial-editor'
 
 
 export default class TrialOne extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             id: '',
             js: '',
@@ -24,6 +24,7 @@ export default class TrialOne extends Component {
 
 
     render(){
+        const {codeSubmission} = this.state.codeSubmission
      return (
         
         <div className="form-container">
@@ -33,7 +34,16 @@ export default class TrialOne extends Component {
                 display: 'flex',
                 justifyContent: 'center'
             }} >
-                <TrialEditor/>
+            <div>
+                <h2>HOW STRONG IS THE FORCE WITHIN YOU?</h2>
+                <h2></h2>
+                <h4 style={{
+                    color: '#007bff'
+                }}>Write a fuction named greeting that returns a string of hello</h4>
+                <TrialEditor codeSubmission={codeSubmission}/>
+                {/* <Button>TEST THE FORCE</Button> */}
+            </div>    
+
                 
             </div>  
                 <Container>
