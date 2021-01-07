@@ -21,7 +21,8 @@ export default class Navbar extends Component {
             }} >
               <Col>
                 <FontAwesomeIcon icon ={faOldRepublic} style={{
-                  fontSize: '4.2rem'
+                  fontSize: '5rem',
+                  marginTop: '1rem'
                 }} />
 
             <h3>CodeKnights</h3>
@@ -39,16 +40,19 @@ export default class Navbar extends Component {
             justifyContent: 'space-around'
            }}>
                 <NavLink exact to="/" style={{
+                    fontSize:'1.4rem',
                     color: '#007bff'
                 }} >
                     Home
                 </NavLink>
                 <NavLink to="/about" style={{
+                    fontSize:'1.4rem',
                     color: '#007bff'
                 }} >
-                    About
+                    Credits
                 </NavLink>
                 <NavLink to="/training" style={{
+                    fontSize:'1.4rem',
                     color: '#007bff'
                 }} >
                     Training

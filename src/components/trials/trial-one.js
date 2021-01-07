@@ -28,61 +28,30 @@ export default class TrialOne extends Component {
      return (
         
         <div className="form-container">
-           <div className="form-wrapper" style={{
-                height: '10rem',
-                color: 'lightblue',
-                display: 'flex',
-                justifyContent: 'center'
-            }} >
-            <div>
-                <h2>HOW STRONG IS THE FORCE WITHIN YOU?</h2>
-                <h2></h2>
-                <h4 style={{
-                    color: '#007bff'
-                }}>Write a fuction named greeting that returns a string of hello</h4>
-                <TrialEditor codeSubmission={codeSubmission}/>
-                {/* <Button>TEST THE FORCE</Button> */}
-            </div>    
+            <Container>
+              <Col>
 
-                
-            </div>  
-                <Container>
-                    <Col style={{
-                        width: '8rem'
+                <div className="form-wrapper" style={{
+                    height: '10rem',
+                    color: 'lightblue',
+                    display: 'flex',
+                    justifyContent: 'center'
                     }} >
-                        <Row>
-                            <h2 style={{
-                                color:'lightblue',
-                                width: '20rem'
+                    <div>
+                        <h2>HOW STRONG IS THE FORCE WITHIN YOU?</h2>
+                        <h2></h2>
+                        <h4 style={{
+                            color: '#007bff'
+                        }}>Write a fuction named greeting that returns a string of hello</h4>
+                        <TrialEditor codeSubmission={codeSubmission}/>
+                    </div>    
 
-                            }}>TRAINING</h2>
-                        </Row>
-                        <Row>
-                            <NavLink to="/trial-one">Trial One</NavLink>
-                        </Row>
-                        <Row>
-                            <NavLink to="/trial-two">Trial Two</NavLink>
-                        </Row>
-                        <Row>
-                            <NavLink to="/trial-three">Trial Three</NavLink>
-                        </Row>
-                    </Col>
+                        
+                </div>
+                </Col>  
                 </Container>
-
+               
         </div>
     )
 }
 }
-
-
-
-
-
-                        
-                            
-
-            
-         
-
-
-

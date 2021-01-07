@@ -12,9 +12,10 @@ export default function about() {
                 <p>.....CREDITS</p>
                 <p></p>
                 <p>...JORDAN HUDGENS</p>
-                <p>.....ALEX JONES</p>
+                <p>.....LORD ALEX JONES</p>
+                <p>.....MY FELLOW CLASSMATES</p>
                 <p></p>
-                <p>THE PEPPERONI MY KIDS PICK OFF THEIR PIZZA Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem dolores, facere sequi natus hic eligendi numquam magnam nam nemo obcaecati, omnis atque esse autem, fugiat doloremque. Minima, officiis error.</p>
+                <p>THIS APPLICATION IS A WORK IN PROGRESS, YOU MAY HAVE TO DISABLE THE SECURITY SETTINGS FOR THIS SITE TO SEE FULL USE OF LOGIN AND SIGNUP FUNCTIONS DUE TO THE RULES OF MIXED CONTENT AND WEB SECURITY THE REST OF THIS FEATURE WILL BE LOREM IPSUM TEXT FOR THE TIME BEING</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem dolores, facere sequi natus hic eligendi numquam magnam nam nemo obcaecati, omnis atque esse autem, fugiat doloremque. Minima, officiis error.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem dolores, facere sequi natus hic eligendi numquam magnam nam nemo obcaecati, omnis atque esse autem, fugiat doloremque. Minima, officiis error.</p>
 

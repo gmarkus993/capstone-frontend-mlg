@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { Controlled as CodeMirror } from 'react-codemirror2';
 import pushid from 'pushid';
 
@@ -65,9 +65,8 @@ class TrialEditor extends Component {
               onBeforeChange={(editor, data, js) => {
                 this.setState({ js });
               }}
-            />
+              />
           </div>
-          <Button onClick={this.forceButton}>TEST THE FORCE</Button>
         </section>
 
         

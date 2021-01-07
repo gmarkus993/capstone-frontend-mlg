@@ -23,7 +23,7 @@ export default class SignUp extends Component {
         event.preventDefault()
 
         if (this.state.password === this.state.passwordConfirm)
-        fetch("http://127.0.0.1:5000/user/add", {
+        fetch("http://backend-mlg.herokuapp.com/user/add", {
             method: "POST",
             headers: { "content-type" : "application/json"},
             body: JSON.stringify({
@@ -34,8 +34,7 @@ export default class SignUp extends Component {
         .then(response => response.json())
         .then(data => {
             if (data === "User added good job") {
-                Cookies.set("username", this.state.username)
-                this.props.history.push("/")
+                this.props.history.push("/login")
             }
             else if (data === "User already exists") {
                 this.setState({ usernameError: true})
@@ -72,23 +71,27 @@ export default class SignUp extends Component {
                     color:'lightblue'
                 }}>SIGNUP</h2>
         
-                <Form style={{
+                <Form onSubmit={this.handleSubmit} style={{
                     width: '20rem'
                 }} >
                     <Form.Group controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control type="email" name="username" placeholder="Enter email" value={this.state.username} onChange={this.handleChange} />
                     </Form.Group>
                     <Form.Group controlId="formGroupPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" name="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" />
+                    </Form.Group>
+                    <Form.Group controlId="formGroupRetypePassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" name="passwordConfirm" value={this.state.passwordConfirm} onChange={this.handleChange} placeholder="Retype Password" />
                     </Form.Group>
                     
                     <div className='signup-button' style={{
                         display:'flex',
                         justifyContent: 'flex-end'
                     }} >
-                        <Button onSubmit={this.handleSubmit}>SIGNUP</Button>
+                        <Button type="submit">SIGNUP</Button>
                     </div>
                 </Form>
             </div>
