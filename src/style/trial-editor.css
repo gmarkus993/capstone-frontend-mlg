@@ -12,6 +12,7 @@ html {
 .trial-container{
   display: flex;
   justify-content: center;
+  height: 20rem;
   
 }
 
