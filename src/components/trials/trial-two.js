@@ -42,7 +42,11 @@ export default class TrialOne extends Component {
                         <h2></h2>
                         <h4 style={{
                             color: '#007bff'
-                        }}>Create a variable called favoriteFood, assign the value of your food of choice
+                        }}>Create a variable called favoriteFood,
+                        </h4>
+                        <h4 style={{
+                            color: '#007bff'
+                        }}>assign the value of your food of choice
                         </h4>
                         <TrialEditor codeSubmission={codeSubmission}/>
                     </div>    
