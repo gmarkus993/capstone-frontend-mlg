@@ -13,7 +13,7 @@ export default class Navbar extends Component {
         return (
             <div>
                 <Container style={{
-            height: '40vh',
+            height: '26vh',
             color: 'lightblue' 
             }} >
             <Row style={{

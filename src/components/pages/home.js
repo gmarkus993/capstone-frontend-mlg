@@ -20,6 +20,7 @@ export default function home() {
                     color: 'lightblue',
                     display:'flex',
                     justifyContent: 'center',
+                    marginTop: '15vh',
                     marginBottom: '1rem'
                 }}>WELCOME</h1>
 
