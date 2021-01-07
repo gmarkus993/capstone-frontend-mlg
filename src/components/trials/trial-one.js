@@ -27,7 +27,6 @@ export default class TrialOne extends Component {
         const {codeSubmission} = this.state.codeSubmission
      return (
         
-        <div className="form-container">
             <Container>
               <Col>
 
@@ -51,7 +50,6 @@ export default class TrialOne extends Component {
                 </Col>  
                 </Container>
                
-        </div>
     )
 }
 }
